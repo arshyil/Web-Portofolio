@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Arshyil</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Page Transition -->
+    <div class="page-transition" id="page-transition"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Arshyil.</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                <i class="fas fa-moon"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <h2>
+                Hi, I'm <span class="highlight">Muhammad Arshyil Azzim</span><br>
+                <span class="typed-text"></span><span class="cursor">|</span>
+            </h2>
+            <p>A Front-End Developer passionate about modern web experiences.</p>
+            <a href="#projects" class="btn-hero">View My Work</a>
+            <a href="assets/file/MuhammadArshyilAzzim_CV.pdf" class="btn-hero" download="">Download My CV</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/img/fotoku-nobg.png" alt="Profile" />
+            <div>
+                <p>I am a Computer Science student at BINUS University with a strong passion for technology.
+                    I enjoy exploring various programming languages such as HTML, CSS, Java etc, while continuously
+                    sharpening my skills in building creative solutions through coding. <br>
+
+                    In addition, I have a deep interest in graphic design, as I believe technology and visual art
+                    complement each other in creating meaningful works.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>HTML</p>
+                    <span class="percent-text">90%</span>
+                </div>
+                <div class="bar"><span data-skill="90%"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>CSS</p>
+                    <span class="percent-text">90%</span>
+                </div>
+                <div class="bar"><span data-skill="90%"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>JavaScript</p>
+                    <span class="percent-text">85%</span>
+                </div>
+                <div class="bar"><span data-skill="85%"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>Java</p>
+                    <span class="percent-text">80%</span>
+                </div>
+                <div class="bar"><span data-skill="80%"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>Figma</p>
+                    <span class="percent-text">85%</span>
+                </div>
+                <div class="bar"><span data-skill="85%"></span></div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <p>Photoshop</p>
+                    <span class="percent-text">100%</span>
+                </div>
+                <div class="bar"><span data-skill="100%"></span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/img/PersonalitiesWeb.jpg" alt="Project 1">
+                <h3>My Personalities Web Project</h3>
+                <p>A self-introduction website I developed to represent my personality and background.</p>
+                <a href="https://arshyil.github.io/My-Personalities/" class="btn-project">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/img/vkellogs.png" alt="Project 2">
+                <h3>Vkellogs Project</h3>
+                <p>The Vkellog project is a college assignment where I created a cereal buying and selling platform.</p>
+                <a href="https://arshyil.github.io/Vkellog-Project/" class="btn-project">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/img/hypeStep.png" alt="Project 2">
+                <h3>HypeStep</h3>
+                <p>A basic e-commerce website for selling shoes, designed and built by me.</p>
+                <a href="#" class="btn-project">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/img/citilink.png" alt="Project 2">
+                <h3>Figma College Assignment</h3>
+                <p>A Figma project developed during my university studies, where I redesigned the Citilink website.</p>
+                <a href="#" class="btn-project">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/img/laporin.png" alt="Project 2">
+                <h3>Figma College Assignment</h3>
+                <p>A Figma project I created during my college studies.</p>
+                <a href="#" class="btn-project">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/img/myDesign.jpeg" alt="Project 2">
+                <h3>My Design Here</h3>
+                <p>My design collection — a glimpse into my creative journey.</p>
+                <a href="#" class="btn-project">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <h2>Send Your Message</h2>
+        <p class="contact-text">I’d love to hear from you — whether it’s a collaboration opportunity, feedback, or any
+            suggestions for improvement.</p>
+        <form id="contactForm" action="https://formspree.io/f/mdkpderv" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-sendMessage">Send Message</button>
+        </form>
+        <br>
+        <br>
+        <h2>My Social Media</h2>
+        <p class="contact-text">
+            Feel free to reach out to me through any of the platforms below
+        </p>
+
+        <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" class="social-icon ig">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/628" target="_blank" class="social-icon wa">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://line.me/ti/p/~yourlineid" target="_blank" class="social-icon line">
+                <i class="fab fa-line"></i>
+            </a>
+            <a href="https://linkedin.com/in/" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Muhammad Arshyil Azzim. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
