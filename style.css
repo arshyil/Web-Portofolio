@@ -748,6 +748,10 @@ body.light-mode .about-content img {
   border: 3px solid #3b82f6;
 }
 
+}body.light-mode .about p {
+  color: #000;
+}
+
 /* SKILLS */
 body.light-mode .skills-container{
   color: #000;
@@ -826,3 +830,4 @@ body.light-mode .theme-toggle {
 body.light-mode .theme-toggle:hover {
   color: #3b82f6;
 }
+
