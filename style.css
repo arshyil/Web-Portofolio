@@ -685,17 +685,18 @@ footer {
 body.light-mode {
   background-color: #f8fafc;
   /* putih terang */
-  color: #1f2937;
+  color: #ffffff;
   /* abu gelap untuk teks */
 }
 
 /* NAVBAR */
 body.light-mode .navbar {
-  background: rgba(248, 250, 252, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   /* putih transparan */
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
 }
 
-body.light-mode .navbar .menu-toggle{
+body.light-mode .navbar .menu-toggle {
   color: #000;
   /* putih transparan */
 }
@@ -706,7 +707,7 @@ body.light-mode .logo {
 }
 
 body.light-mode .nav-links a {
-  color: #ffffff;
+  color: #000000;
 }
 
 body.light-mode .nav-links a:hover {
@@ -747,6 +748,12 @@ body.light-mode .about-content img {
   border: 3px solid #3b82f6;
 }
 
+/* SKILLS */
+body.light-mode .skills-container{
+  color: #000;
+}
+
+
 /* PROJECTS */
 body.light-mode .project-card {
   background: #e5e7eb;
@@ -763,6 +770,11 @@ body.light-mode textarea {
   background: #fff;
   color: #1f2937;
   border: 1px solid #cbd5e1;
+}
+
+body.light-mode .contact p {
+  /* background: #e5e7eb; */
+  color: #000000;
 }
 
 body.light-mode .social-icon {
