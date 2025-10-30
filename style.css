@@ -67,7 +67,6 @@ body {
   pointer-events: all;
 }
 
-
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -79,6 +78,12 @@ body {
   width: 100%;
   top: 0;
   z-index: 100;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* jarak antara dark mode & hamburger */
 }
 
 .logo {
@@ -113,7 +118,6 @@ body {
   border-bottom: 2px solid #0ea5e9;
   padding-bottom: 2px;
 }
-
 
 /* HERO */
 #heroCanvas {
@@ -206,7 +210,6 @@ body {
 }
 
 @keyframes blink {
-
   0%,
   50%,
   100% {
@@ -218,7 +221,6 @@ body {
     opacity: 0;
   }
 }
-
 
 /* SECTIONS */
 section {
@@ -289,7 +291,7 @@ h2 {
   border-radius: 14px;
   overflow: hidden;
   display: flex;
-  flex-direction: column;  /* arah kolom */
+  flex-direction: column; /* arah kolom */
   transition: transform 0.3s;
   /* padding: 1rem; */
   height: 100%;
@@ -316,9 +318,8 @@ h2 {
   margin: 0 1rem 1rem;
 }
 
-
 .project-card a {
-  margin-top: auto;      /* dorong tombol ke bawah */
+  margin-top: auto; /* dorong tombol ke bawah */
   align-self: flex-start; /* posisikan ke kiri */
   text-decoration: none;
   background: #00ccff;
@@ -440,10 +441,12 @@ footer {
 
 /* Tablet (≤ 992px) */
 @media (max-width: 992px) {
+  /* Navbar */
   .navbar {
     padding: 1rem 2rem;
   }
 
+  /* About */
   .about-content {
     flex-direction: column;
     text-align: center;
@@ -453,78 +456,17 @@ footer {
     width: 150px;
   }
 
+  /* Skills */
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
+  /* Projects */
   .project-card img {
     height: 160px;
   }
-}
 
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    /* hide desktop menu */
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .logo {
-    font-size: 1.3rem;
-  }
-
-  /* HERO */
-  .hero h2 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 0.95rem;
-  }
-
-  .btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
-  }
-
-  section {
-    padding: 4rem 1.5rem;
-  }
-}
-
-/* Small Mobile (≤ 480px) */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 0.85rem;
-  }
-
-  .about-content img {
-    width: 120px;
-  }
-
-  .project-card img {
-    height: 140px;
-  }
-
-  footer p {
-    font-size: 0.8rem;
-  }
-}
-
-/* Tablet (≤ 992px) */
-@media (max-width: 992px) {
+  /* Contact */
   .contact-text {
     font-size: 1rem;
   }
@@ -546,6 +488,40 @@ footer {
 
 /* Mobile (≤ 768px) */
 @media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    display: none; /* hide desktop menu */
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  /* Hero */
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  /* Contact */
   .contact-text {
     font-size: 0.95rem;
     padding: 0 1rem;
@@ -567,6 +543,30 @@ footer {
 
 /* Small Mobile (≤ 480px) */
 @media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Hero */
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  /* About */
+  .about-content img {
+    width: 120px;
+  }
+
+  /* Projects */
+  .project-card img {
+    height: 140px;
+  }
+
+  /* Contact */
   .contact-text {
     font-size: 0.9rem;
   }
@@ -580,6 +580,7 @@ footer {
     padding: 0.6rem;
   }
 
+  /* Footer */
   footer p {
     font-size: 0.8rem;
   }
@@ -680,7 +681,6 @@ footer {
   transition: width 1.3s ease;
 }
 
-
 /* ==================== LIGHT MODE ==================== */
 body.light-mode {
   background-color: #f8fafc;
@@ -695,13 +695,18 @@ body.light-mode .navbar {
   /* putih transparan */
 }
 
+body.light-mode .navbar .menu-toggle{
+  color: #000;
+  /* putih transparan */
+}
+
 body.light-mode .logo {
   color: #3b82f6;
   /* biru terang */
 }
 
 body.light-mode .nav-links a {
-  color: #1f2937;
+  color: #ffffff;
 }
 
 body.light-mode .nav-links a:hover {
