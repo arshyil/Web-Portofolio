@@ -21,13 +21,30 @@ sections.forEach((section) => {
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener("click", (e) => {
+  e.stopPropagation(); // cegah klik tombol dianggap klik di luar
   navLinks.classList.toggle("active");
 
   // Ganti ikon (☰ jadi ✖)
   const icon = menuToggle.querySelector("i");
   icon.classList.toggle("fa-bars");
   icon.classList.toggle("fa-times");
+});
+
+// Tutup menu saat klik di luar area menu
+document.addEventListener("click", (e) => {
+  if (
+    navLinks.classList.contains("active") &&
+    !navLinks.contains(e.target) &&
+    !menuToggle.contains(e.target)
+  ) {
+    navLinks.classList.remove("active");
+
+    // Balikin ikon jadi ☰
+    const icon = menuToggle.querySelector("i");
+    icon.classList.add("fa-bars");
+    icon.classList.remove("fa-times");
+  }
 });
 
 const form = document.getElementById("contactForm");
@@ -214,3 +231,4 @@ themeToggle.addEventListener("click", () => {
   icon.classList.toggle("fa-sun");
   icon.classList.toggle("fa-moon");
 });
+
