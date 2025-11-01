@@ -166,7 +166,7 @@ body {
   margin-top: 1.5rem;
   border-radius: 15px;
   font-weight: 600;
-  text-decoration: none;
+  /* text-decoration: none; */
   transition: background 0.3s;
   margin: 10px;
 }
@@ -327,7 +327,7 @@ h2 {
   align-self: flex-start;
   /* posisikan ke kiri */
   text-decoration: none;
-  background: #00ccff;
+  background: #38bdf8;
   color: #000;
   padding: 0.5rem 1rem;
   border-radius: 15px;
@@ -753,6 +753,73 @@ body.light-mode .btn:hover {
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
 }
 
+/* ================ BUTTON PROJECT ================= */
+body.light-mode .btn-hero {
+  display: inline-block;
+  background: #63dbff;
+  color: #0f172a;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+  margin: 10px;
+}
+
+body.light-mode .btn-hero:hover {
+  color: white;
+  background: #0ea5e9;
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.4);
+  /* transition: all 0.3 ease; */
+  transition: transform 0.6s;
+}
+
+body.light-mode .project-card a {
+  margin-top: auto;
+  /* dorong tombol ke bawah */
+  align-self: flex-start;
+  /* posisikan ke kiri */
+  text-decoration: none;
+  background: #63dbff;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  transition: background 0.3s;
+}
+
+body.light-mode .btn-project:hover {
+  color: white;
+  background: #0ea5e9;
+  /* transform: translateY(-3px); */
+  /* box-shadow: 0 0 30px rgba(0, 200, 255, 0.4); */
+  /* transition: all 0.3 ease; */
+  transition: transform 0.6s;
+}
+
+.btn-sendMessage {
+  display: inline-block;
+  background: #63dbff;
+  color: #0f172a;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+  margin: 10px;
+}
+
+.btn-sendMessage:hover {
+  color: white;
+  background: #0ea5e9;
+  /* transform: translateY(-3px); */
+  /* box-shadow: 0 0 30px rgba(0, 200, 255, 0.4); */
+  /* transition: all 0.3 ease; */
+  transition: transform 0.6s;
+}
+
 /* SECTIONS */
 body.light-mode section {
   background: #f8fafc;
@@ -780,7 +847,7 @@ body.light-mode .project-card {
 }
 
 body.light-mode .project-card:hover {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 /* CONTACT */
